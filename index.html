@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>[FCC] Simple weather app</title>
+	<link href="main.css" rel="stylesheet">
+</head>
+<body>
+	<div id="weather" class="hide">
+		<div class="left">
+			<div id="icon"></div>
+		</div>
+		<div class="right">
+			<div id="temp"></div>
+			<div id="desc"></div>
+			<div id="loc"></div>
+		</div>
+		<div class="under">
+			<a href="#" onclick="showLocationSelector()">Change location</a>
+		</div>
+	<small class="credit">
+		<a href="http://www.freepik.com/free-vector/weather-icons-collection_1044316.htm" class="credit">Weather icons by Bamdewanto / Freepik</a>
+	</small>
+	</div>
+	<div id="select" class="hide">
+		<span>Select a city:</span>
+		<span id="close">
+			<a href="#" onclick="hideLocationSelector()">Close</a>
+		</span>
+		<input type="text" id="locationInput"/>
+		<ul class="hide" id="suggestions">			
+		</ul>
+	</div>
+	<script type="text/javascript" src="cities.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

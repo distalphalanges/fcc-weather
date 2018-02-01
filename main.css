@@ -1,0 +1,206 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+input {
+	width: 400px;
+	margin: 6px 0;
+	padding: 6px;
+	font-size: 20px;
+}
+
+ul {
+	list-style: none;
+	height: 150px;
+	width: 400px;
+	margin: 3px 0;
+	padding: 1px;
+	overflow-y: auto;
+}
+
+li {
+	color: #555;
+	padding: 6px;
+	background-color: #F6F6F6;
+	cursor: pointer;
+}
+
+li:nth-child(2n) {
+	background-color: #E6E6E6;
+}
+
+li:hover {
+	background-color: #C9C9C9;
+}
+
+small {
+	color: #888;
+	position: absolute;
+	bottom: 4px;
+	left: 6px;
+}
+
+.hide {
+	display: none;
+}
+
+.left, .right {
+	display: inline-block;
+}
+
+.left {
+	width: 100px;
+}
+
+.right {
+	width: 295px;
+	padding: 4px 10px;
+	vertical-align: top;
+}
+
+.under {
+	color: #777;
+	margin: 5px;
+	font-size: 14px;
+}
+
+#select {
+	width: 400px;
+	margin: 0 auto;
+}
+
+#weather {
+	width: 400px;
+	height: 100px;
+	margin: 50px auto;
+	background: #eee;
+}
+
+#temp {
+	font-size: 2.7em;
+}
+
+#loc {
+	display: inline-block;
+}
+
+#icon {
+	height: 100px;
+	width: 100px;
+	background-color: #2561A0;
+}
+
+#close {
+	color: #777;
+	font-size: 14px;
+	float: right;
+}
+
+.loaded {
+	background: url('icons.png');
+	background-repeat: no-repeat;
+	background-size: 450px;
+}
+
+/*
+The FCC weather api provides a few more 
+weather types than I had icons for. 
+*/
+
+.fog,
+.haze,
+.scattered-clouds,
+.overcast-clouds {
+	background-position:-16px -20px;
+}
+
+.few-clouds {
+	background-position: -126px -15px;
+}
+
+.broken-clouds {
+	background-position: -231px -18px;
+}
+
+.calm
+.light-breeze,
+.gentle-breeze,
+.moderate-breeze,
+.fresh-breeze,
+.clear-sky {
+	background-position: -331px -22px;
+}
+
+.light-intensity-drizzle,
+.drizzle,
+.heavy-intensity-drizzle,
+.light-intensity-drizzle-rain,
+.drizzle-rain,
+.heavy-intensity-drizzle-rain,
+.shower-rain-and-drizzle,
+.heavy-shower-rain-and-drizzle,
+.shower-drizzle,
+.light-rain,
+.moderate-rain,
+.heavy-intensity-rain,
+.very-heavy-rain,
+.extreme-rain,
+.freezing-rain,
+.light-intensity-shower-rain,
+.shower-rain,
+.heavy-intensity-shower-rain,
+.ragged-shower-rain {
+ 	background-position: -17px -130px;
+}
+
+.thunderstorm,
+.light-thunderstorm,
+.ragged-thunderstorm,
+.thunderstorm-with-drizzle,
+.thunderstorm-with-light-drizzle,
+.thunderstorm-with-heavy-drizzle, 
+.thunderstorm-with-rain,
+.thunderstorm-with-light-rain{
+ 	background-position: -122px -133px;
+}
+
+.storm,
+.violent-storm,
+.heavy-thunderstorm,
+.thunderstorm-with-heavy-rain {
+    background-position: -331px -135px;
+}
+
+.snow,
+.mist,
+.light-snow,
+.light-shower-snow,
+.light-rain-and-snow,
+.shower-snow {
+	background-position: -226px -135px;
+}
+
+.heavy-snow,
+.sleet,
+.shower-sleet,
+.rain-and-snow,
+.heavy-shower-snow {
+	background-position: -122px -334px;
+}
+
+.strong-breeze,
+.high-wind,
+.near-gale,
+.gale,
+.severe-gale {
+	background-position: -229px -226px;
+}
