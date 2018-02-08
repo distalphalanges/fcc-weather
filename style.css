@@ -42,11 +42,13 @@ li:hover {
 	background-color: #C9C9C9;
 }
 
-small {
-	color: #888;
+.credit {
+	color: #AAA;
+	font-size: x-small;
 	position: absolute;
 	bottom: 4px;
 	left: 6px;
+	width: inherit;
 }
 
 .hide {
@@ -112,7 +114,7 @@ small {
 }
 
 /*
-The FCC weather api provides a few more 
+The weather API provided a few more 
 weather types than I had icons for. 
 */
 
